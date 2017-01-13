@@ -7,7 +7,7 @@
 
         <link href="css/application.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <meta charset="utf-8">
@@ -36,330 +36,20 @@
 				<li class="">
                     <a href="form_elements.html"><i class="fa fa-cog"></i> <span class="name">Configuración</span></a>
                 </li>
-				<!--
-                <li class="panel ">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse"
-                       data-parent="#side-nav" href="#forms-collapse"><i class="fa fa-pencil"></i> <span class="name">Forms</span></a>
-                    <ul id="forms-collapse" class="panel-collapse collapse ">
-                        <li class=""><a href="form_account.html">Account</a></li>
-                        <li class=""><a href="form_article.html">Article</a></li>
-                        <li class=""><a href="form_elements.html">Elements</a></li>
-                        <li class=""><a href="form_validation.html">Validation</a></li>
-                        <li class=""><a href="form_wizard.html">Wizard</a></li>
-                    </ul>
-                </li>
-                <li class="panel active">
-                    <a class="accordion-toggle " data-toggle="collapse"
-                       data-parent="#side-nav" href="#stats-collapse"><i class="fa fa-area-chart"></i> <span class="name">Statistics</span></a>
-                    <ul id="stats-collapse" class="panel-collapse collapse in">
-                        <li class=""><a href="stat_statistics.html">Stats</a></li>
-                        <li class="active"><a href="stat_charts.html">Charts</a></li>
-                        <li class=""><a href="stat_realtime.html">Realtime</a></li>
-                    </ul>
-                </li>
-                <li class="panel ">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse"
-                       data-parent="#side-nav" href="#ui-collapse"><i class="fa fa-magic"></i> <span class="name">User Interface</span></a>
-                    <ul id="ui-collapse" class="panel-collapse collapse ">
-                        <li class=""><a href="ui_buttons.html">Buttons</a></li>
-                        <li class=""><a href="ui_dialogs.html">Dialogs</a></li>
-                        <li class=""><a href="ui_notifications.html">Notifications</a></li>
-                        <li class=""><a href="ui_icons.html">Icons</a></li>
-                        <li class=""><a href="ui_tabs.html">Tabs</a></li>
-                        <li class=""><a href="ui_accordion.html">Accordion</a></li>
-                    </ul>
-                </li>
-                <li class="panel ">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse"
-                       data-parent="#side-nav" href="#components-collapse"><i class="fa fa-tree"></i> <span class="name">Components</span></a>
-                    <ul id="components-collapse" class="panel-collapse collapse ">
-                        <li class=""><a href="component_calendar.html">Calendar</a></li>
-                        <li class=""><a href="component_maps.html" data-no-pjax>Maps</a></li>
-                        <li class=""><a href="component_gallery.html">Gallery</a></li>
-                        <li class=""><a href="component_fileupload.html" data-no-pjax>Fileupload</a></li>
-                        <li class=""><a href="component_bootstrap.html">Bootstrap</a></li>
-                        <li class=""><a href="component_list_groups.html">List Groups</a></li>
-                    </ul>
-                </li>
-                <li class="panel ">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse"
-                       data-parent="#side-nav" href="#tables-collapse"><i class="fa fa-cog"></i> <span class="name">Tables</span></a>
-                    <ul id="tables-collapse" class="panel-collapse collapse ">
-                        <li class=""><a href="tables_static.html">Static <sup class="text-danger fw-bold">upd</sup></a></li>
-                        <li class=""><a href="tables_dynamic.html">Dynamic</a></li>
-                    </ul>
-                </li>
-                <li class="panel ">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse"
-                       data-parent="#side-nav" href="#grid-collapse"><i class="fa fa-th"></i> <span class="name">Widgets</span></a>
-                    <ul id="grid-collapse" class="panel-collapse collapse ">
-                        <li class=""><a href="grid_basic.html">Basic</a></li>
-                        <li class=""><a href="grid_live.html">Live</a></li>
-                    </ul>
-                </li>
-                <li class="panel ">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse"
-                       data-parent="#side-nav" href="#special-collapse"><i class="fa fa-leaf"></i> <span class="name">Special</span></a>
-                    <ul id="special-collapse" class="panel-collapse collapse ">
-                        <li class=""><a href="special_search.html">Search <sup class="text-warning fw-bold">new</sup></a></li>
-                        <li class=""><a href="special_invoice.html">Invoice</a></li>
-                        <li class=""><a href="special_inbox.html">Inbox &nbsp; <span class="label label-important">3</span></a></li>
-                        <li><a target="_blank" href="login.html">Login</a></li>
-                        <li><a target="_blank" href="error.html">Error Page</a></li>
-                        <li><a href="landing.html" data-no-pjax>Landing</a></li>
-                        <li><a href="../light/index.html" data-no-pjax title="Light Blue Transparent Light version">Light <sup class="text-warning fw-bold">new</sup></a></li>
-                        <li><a href="../white/index.html" data-no-pjax title="Light Blue Transparent White version">White <sup class="text-warning fw-bold">new</sup></a></li>
-                    </ul>
-                </li>
-                <li class="panel">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse"
-                       data-parent="#side-nav" href="#menu-levels-collapse"><i class="fa fa-folder-open"></i> <span class="name">Menu Levels</span></a>
-                    <ul id="menu-levels-collapse" class="panel-collapse collapse">
-                        <li><a href="#">Item 1.1</a></li>
-                        <li><a href="#">Item 1.2</a></li>
-                        <li class="panel">
-                            <a class="accordion-toggle collapsed" data-toggle="collapse"
-                               data-parent="#menu-levels-collapse" href="#sub-menu-1-collapse">Item 1.3</a>
-                            <ul id="sub-menu-1-collapse" class="panel-collapse collapse">
-                                <li class="panel">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse"
-                                       data-parent="#sub-menu-1-collapse" href="#sub-menu-3-collapse">Item 2.1</a>
-                                    <ul id="sub-menu-3-collapse" class="panel-collapse collapse">
-                                        <li><a href="#">Item 3.1</a></li>
-                                        <li><a href="#">Item 3.2</a></li>
-                                        <li><a href="#">Item 3.3</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Item 2.2</a></li>
-                                <li class="panel">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse"
-                                       data-parent="#sub-menu-1-collapse" href="#sub-menu-2-collapse">Item 2.3</a>
-                                    <ul id="sub-menu-2-collapse" class="panel-collapse collapse">
-                                        <li><a href="#">Item 3.4</a></li>
-                                        <li><a href="#">Item 3.5</a></li>
-                                        <li><a href="#">Item 3.6</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-				-->
                 <li>
                     <a href="login.html"><i class="fa fa-sign-out"></i> <span class="name">Sign Out</span></a>
                 </li>
             </ul>
-        <!--
-            <h5 class="sidebar-nav-title">Labels <a class="action-link" href="#"><i class="glyphicon glyphicon-plus"></i></a></h5>
-            
-            <ul class="sidebar-labels">
-                <li>
-                    <a href="#">
-                        
-                        <i class="fa fa-circle text-warning"></i>
-                        <span class="label-name">My Recent</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-circle text-gray"></i>
-                        <span class="label-name">Starred</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-circle text-danger"></i>
-                        <span class="label-name">Background</span>
-                    </a>
-                </li>
-            </ul>
-        
-            <h5 class="sidebar-nav-title">Projects</h5>
-            
-            <div class="sidebar-alerts">
-                <div class="alert fade in">
-                    <a href="#" class="close" data-dismiss="alert" aria-hidden="true">&times;</a>
-                    <span class="text-white fw-semi-bold">Sales Report</span> <br>
-                    <div class="progress progress-xs mt-xs mb-0">
-                        <div class="progress-bar progress-bar-gray-light" style="width: 16%"></div>
-                    </div>
-                    <small>Calculating x-axis bias... 65%</small>
-                </div>
-                <div class="alert fade in">
-                    <a href="#" class="close" data-dismiss="alert" aria-hidden="true">&times;</a>
-                    <span class="text-white fw-semi-bold">Personal Responsibility</span> <br>
-                    <div class="progress progress-xs mt-xs mb-0">
-                        <div class="progress-bar progress-bar-danger" style="width: 23%"></div>
-                    </div>
-                    <small>Provide required notes</small>
-                </div>
-            </div>
-			-->
         </nav>    <div class="wrap">
         <header class="page-header">
             <div class="navbar">
                 <ul class="nav navbar-nav navbar-right pull-right">
-                    <!--
-					<li class="visible-phone-landscape">
-                        <a href="#" id="search-toggle">
-                            <i class="fa fa-search"></i>
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" title="Messages" id="messages"
-                           class="dropdown-toggle"
-                           data-toggle="dropdown">
-                            <i class="glyphicon glyphicon-comment"></i>
-                        </a>
-                        <ul id="messages-menu" class="dropdown-menu messages" role="menu">
-                            <li role="presentation">
-                                <a href="#" class="message">
-                                    <img src="img/1.png" alt="">
-                                    <div class="details">
-                                        <div class="sender">Jane Hew</div>
-                                        <div class="text">
-                                            Hey, John! How is it going? ...
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li role="presentation">
-                                <a href="#" class="message">
-                                    <img src="img/2.png" alt="">
-                                    <div class="details">
-                                        <div class="sender">Alies Rumiancaŭ</div>
-                                        <div class="text">
-                                            I'll definitely buy this template
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li role="presentation">
-                                <a href="#" class="message">
-                                    <img src="img/3.png" alt="">
-                                    <div class="details">
-                                        <div class="sender">Michał Rumiancaŭ</div>
-                                        <div class="text">
-                                            Is it really Lore ipsum? Lore ...
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li role="presentation">
-                                <a href="#" class="text-align-center see-all">
-                                    See all messages <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-					
-                    <li class="dropdown">
-                        <a href="#" title="8 support tickets"
-                           class="dropdown-toggle"
-                           data-toggle="dropdown">
-                            <i class="glyphicon glyphicon-globe"></i>
-                            <span class="count">8</span>
-                        </a>
-                        <ul id="support-menu" class="dropdown-menu support" role="menu">
-                            <li role="presentation">
-                                <a href="#" class="support-ticket">
-                                    <div class="picture">
-                                        <span class="label label-important"><i class="fa fa-bell-o"></i></span>
-                                    </div>
-                                    <div class="details">
-                                        Check out this awesome ticket
-                                    </div>
-                                </a>
-                            </li>
-                            <li role="presentation">
-                                <a href="#" class="support-ticket">
-                                    <div class="picture">
-                                        <span class="label label-warning"><i class="fa fa-question-circle"></i></span>
-                                    </div>
-                                    <div class="details">
-                                        "What is the best way to get ...
-                                    </div>
-                                </a>
-                            </li>
-                            <li role="presentation">
-                                <a href="#" class="support-ticket">
-                                    <div class="picture">
-                                        <span class="label label-success"><i class="fa fa-tag"></i></span>
-                                    </div>
-                                    <div class="details">
-                                        This is just a simple notification
-                                    </div>
-                                </a>
-                            </li>
-                            <li role="presentation">
-                                <a href="#" class="support-ticket">
-                                    <div class="picture">
-                                        <span class="label label-info"><i class="fa fa-info-circle"></i></span>
-                                    </div>
-                                    <div class="details">
-                                        12 new orders has arrived today
-                                    </div>
-                                </a>
-                            </li>
-                            <li role="presentation">
-                                <a href="#" class="support-ticket">
-                                    <div class="picture">
-                                        <span class="label label-important"><i class="fa fa-plus"></i></span>
-                                    </div>
-                                    <div class="details">
-                                        One more thing that just happened
-                                    </div>
-                                </a>
-                            </li>
-                            <li role="presentation">
-                                <a href="#" class="text-align-center see-all">
-                                    See all tickets <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="divider"></li>
-                    <li class="hidden-xs">
-                        <a href="#" id="settings"
-                           title="Settings"
-                           data-toggle="popover"
-                           data-placement="bottom">
-                            <i class="glyphicon glyphicon-cog"></i>
-                        </a>
-                    </li>
-					-->
                     <li class="hidden-xs dropdown">
                         <a href="#" title="Account" id="account"
                            class="dropdown-toggle"
                            data-toggle="dropdown">
                             <i class="glyphicon glyphicon-user"></i>
                         </a>
-                        <!--
-						<ul id="account-menu" class="dropdown-menu account" role="menu">
-                            <li role="presentation" class="account-picture">
-                                <img src="img/2.png" alt="">
-                                Philip Daineka
-                            </li>
-                            <li role="presentation">
-                                <a href="form_account.html" class="link">
-                                    <i class="fa fa-user"></i>
-                                    Profile
-                                </a>
-                            </li>
-                            <li role="presentation">
-                                <a href="component_calendar.html" class="link">
-                                    <i class="fa fa-calendar"></i>
-                                    Calendar
-                                </a>
-                            </li>
-                            <li role="presentation">
-                                <a href="#" class="link">
-                                    <i class="fa fa-inbox"></i>
-                                    Inbox
-                                </a>
-                            </li>
-                        </ul>
-						-->
                     </li>
 					
                     <li class="visible-xs">
@@ -375,28 +65,80 @@
                     <li class="hidden-xs"><a href="login.html"><i class="glyphicon glyphicon-off"></i></a></li>
 					
                 </ul>
-                <!--
-				<form id="search-form" class="navbar-form pull-right" role="search">
-                    <input type="search" class="form-control search-query" placeholder="Search...">
-                </form>
-                <div class="notifications pull-right">
-                    <div class="alert pull-right">
-                        <a href="#" class="close ml-xs" data-dismiss="alert">&times;</a>
-                        <i class="fa fa-info-circle mr-xs"></i> Check out Light Blue <a id="notification-link" href="#">settings</a> on the right!
+            </div>
+        </header>
+        <div class="content container">
+        <input id="tiempo" name="tiempo" type="hidden" value="12">
+        <input id="quetiempo" name="quetiempo" type="hidden" value="m">
+        <input id="quemes" name="quemes" type="hidden" value="">
+        <div style="display: none;">
+          <div id="jsonbaset"></div>
+          <div id="datosobjetivot"></div>
+          <div id="datosrealt"></div>
+          <div id="datostendenciat"></div>
+        </div>
+        <div class="row" style="display: none;">
+			<div class="col-md-12">
+			<a href="index.html"><input type="button" class="btn" style="background-color: #394B60;" value="Día"/></a>
+			<input type="button" class="btn" style="background-color: #485E78;" value="Semana"/>
+			<input type="button" class="btn" style="background-color: #485E78;" value="Mes"/>
+			<input type="button" class="btn" style="background-color: #485E78;" value="Trimestre"/>
+            <input type="text" id="date1" class="form-control input-transparent" readonly="readonly" placeholder="Fecha" style="width: 250px;text-align: center;display: inline-block;">
+			</div>
+		</div>
+        <br>
+        <!--<h2 class="page-title">Lisa Flor Cia.Ltda.<small> EXPOFLORES </small></h2>-->
+        <div class="row">
+
+          <div class="col-lg-12 col-sm-12">
+            <section class="widget">
+              <header>
+                  <h5 id="nomindicador"></h5>
+                  <!--<div class="widget-controls">
+                      <a href="#"><i class="glyphicon glyphicon-plus"></i></a>
+                  </div>-->
+              </header>
+              <div class="body">
+              <div id="campos" style="display: none;"></div>
+                  <p id="desindicador"></p>
+                  <b>FÓRMULA</b>
+                  <p id="forindicador"></p>
+              </div>
+            </section>
+          </div>
+
+			<div class="col-lg-12 col-sm-12">
+                <div class="row">
+			        <div class="col-md-8 col-xs-8">
+                        <span id="nombreindicador" style="color: #FFFFFF;font-size: 18px;font-weight: bolder;"></span>
+                    </div>
+                    <div class="col-md-4 col-xs-4" style="text-align: right;">
+                        <button type="button" id="btnagregar" onclick="agregadatos();" class="btn btn-success btn-md" data-placement="top" data-original-title=".btn .btn-primary .btn-lg">
+                            Agregar Dato
+                        </button>
                     </div>
                 </div>
-				-->
-            </div>
-        </header>        <div class="content container">
-        <h2 class="page-title">Lisa Flor Cia.Ltda.<small> EXPOFLORES </small></h2>
-        <div class="row">
-            
-			<div class="col-lg-12 col-sm-12">
+            <br>
 			<section class="widget large">
-                    <header>
-                        <h4><i class="fa fa-arrow-circle-o-right"></i> Utilidad x Cama:  1.221,02 US$ x Cama</h4>
+                    <header style="text-align: center;">
+                    <table style="width: 100%;">
+                      <tr>
+                        <td style="width: 50%;text-align: left;">
+                          <span style="color: #283443;"><i class="fa fa-circle" aria-hidden="true"></i></span> Real&nbsp;&nbsp;&nbsp;
+                          <span style="color: #24FF86;"><i class="fa fa-circle" aria-hidden="true"></i></span> Meta&nbsp;&nbsp;&nbsp;
+                          <span style="color: #F84952;"><i class="fa fa-circle" aria-hidden="true"></i></span> Base&nbsp;&nbsp;&nbsp;
+                          <span style="color: #F7DD11;"><i class="fa fa-circle" aria-hidden="true"></i></span> Tendencia
+                        </td>
+                        <td style="width: 50%;text-align: right;">
+                          <h4>
+                            <span style="color: #FFFFFF;">Meta:</span> <span id="ultimoobjetivo" style="color: #FFFFFF;"></span><br>
+                            <span style="color: #FFFFFF;">Último dato:</span> <span><span id="semaforo" style="color: #FFFFFF;display: none;"><i class="fa fa-circle" aria-hidden="true"></i></span> <span id="ultimoreal"></span></span><br>
+                            <span style="color: #FFFFFF;">Base:</span> <span id="ultimobase" style="color: #FFFFFF;"></span>
+                          </h4>
+                        </td>
+                      </tr>
+                    </table>
 						<div class="widget-controls">
-                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>
                         </div>
                     </header>
                     <div id="sources-chart-line" class="body chart">
@@ -408,87 +150,39 @@
 			
         </div>
         <div class="row">
-		
+
             <div class="col-md-12">
 			
 			<section class="widget">
-                    <header>
-                        <h5>Utilidad x Cama</h5>
-                        <div class="widget-controls">
-                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>
-                            <!--<a data-widgster="close" href="#"><i class="glyphicon glyphicon-remove"></i></a>-->
-                        </div>
-                    </header>
                     <div class="body">
-                        <!--<h3>Bordered  <span class="fw-semi-bold">Table</span></h3>-->
-                        <p>Este indicador nos muestra xxxxx lsk dlask dlas  slkad sl k dlask djalsk djaslkdls dkajsl dkas jy tambien es un indicador grande que nos dice algunas coassaws y vale la pena tener en cuenta que no se puede hacer las cosas siempre bien.</p>
-                        <table class="table table-bordered table-lg mt-lg mb-0">
+                        <table class="table table-striped table-md mt-md mb-0">
                             <thead>
                             <tr>
-                                <!--
-								<th>
-                                    <div class="checkbox">
-                                        <input id="checkbox10" type="checkbox" data-check-all>
-                                        <label for="checkbox10"></label>
-                                    </div>
-                                </th>-->
-                                <th>Fecha</th>
-                                <th class="text-align-right">Objetivo</th>
-                                <th class="text-align-center">Dato</th>
+                                <th style="width: 26%">Fecha</th>
+                                <th style="width: 23%" class="text-align-center">Base</th>
+                                <th style="width: 23%" class="text-align-center">Meta</th>
+                                <th style="width: 23%" class="text-align-center">Dato</th>
+                                <th style="width: 5%" class="text-align-center"></th>
                             </tr>
                             </thead>
-                            <tbody>
-                            <tr>
-     
-                                <td>17 Nov</td>
-                                <td class="text-align-right">$25 224.2</td>
-                                <td class="text-align-center">
-                                    <input type="text" class="form-control input-transparent" style="text-align: right;" value="$45 256.21"/>
-                                </td>
-                            </tr>
-                            <tr>
+                        </table>
+                        <div style="height: 290px;overflow-x: hidden;overflow-y: auto;">
+                        <table class="table table-striped table-bordered table-md mt-md mb-0">
+                            <tbody id="tabladatos">
 
-                                <td>18 Nov</td>
-                                <td class="text-align-right">$87 346.1</td>
-                                <td class="text-align-center">
-                                    <input type="text" class="form-control input-transparent" style="text-align: right;" value="$13 665.52"/>
-                                </td>
-                            </tr>
-                            <tr>
-
-                                <td>19 Nov</td>
-                                <td class="text-align-right">$57 944.6</td>
-                                <td class="text-align-center">
-                                    <input type="text" class="form-control input-transparent" style="text-align: right;" value="$66 516.2"/>
-                                </td>
-                            </tr>
-                            <tr>
-
-                                <td>20 Nov</td>
-                                <td class="text-align-right">$118 533.1</td>
-                                <td class="text-align-center">
-                                    <input type="text" class="form-control input-transparent" style="text-align: right;" value="$9 522.8"/>
-                                </td>
-                            </tr>
-                            <tr>
-
-                                <td>21 Nov</td>
-                                <td class="text-align-right">$72 854.5</td>
-                                <td class="text-align-right">
-                                    <input type="text" class="form-control input-transparent" style="text-align: right;" value="$10 121.2"/>
-                                </td>
-                            </tr>
                             </tbody>
                         </table>
+                        </div>
 						<br/>
-									<div style="text-align:right">
-									<a href="index.html">
-									<button type="button" class="btn btn-primary btn-lg" data-placement="top" data-original-title=".btn .btn-primary .btn-lg">
-                                        Grabar Datos
-                                    </button>
-									</a>
-									</div>
-									<br/>
+    					<div style="text-align:right">
+      					  <button type="button" id="btnactualizadato" onclick="grabadatos();" style="display: none;" class="btn btn-primary btn-md" data-placement="top" data-original-title=".btn .btn-primary .btn-lg">
+                              Grabar Datos
+                          </button>
+                          <button type="button" id="btncreadato" onclick="creardatos();" style="display: none;" class="btn btn-primary btn-md" data-placement="top" data-original-title=".btn .btn-primary .btn-lg">
+                              Grabar Datos
+                          </button>
+    					</div>
+    					<br/>
                     </div>
                 </section>
                 
@@ -509,6 +203,9 @@
 <script src="lib/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 <script src="lib/widgster/widgster.js"></script>
 <script src="lib/underscore/underscore.js"></script>
+
+<link id="bsdp-css" href="css/bootstrap-datepicker3.min.css" rel="stylesheet">
+<script src="js/bootstrap-datepicker.min.js" charset="UTF-8"></script>
 
 <!-- common application js -->
 <script src="js/app.js"></script>
@@ -584,6 +281,615 @@
         <!-- page application js -->
         <script src="js/stat-charts.js"></script>
 
+<script type="text/javascript">
+$('#date1').datepicker({
+    format: 'yyyy-mm-dd',
+    startDate: '-2y',
+    autoclose: true
+});
+meses=['','Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+mesesc=['','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+$( document ).ready(function() {
+  var url = window.location.href;
+  var variable;
+  url = unescape(url);
+  //url = url.replace(/+/g, " ");
+  url = url.toUpperCase();
+  var parametro = valParam(url, "idind");
+  var anio = valParam(url, "anio");
+  llenardatos(parametro,anio);
+});
+function llenardatos(cual,anio){
+  var apiURL='https://www.practisis.net/kpi/api2.php';
+  var tiempo = parseInt($('#tiempo').val());
+  $.post(apiURL,{
+		action : 'DetalleIndicador',cual : cual,anio : anio
+		}).done(function(response){
+			//alert(response);
+            var jsoncateg=JSON.parse(response);
+		    var jsoncategorias=jsoncateg.Indicadores;
+            for(var n=0;n<jsoncategorias.length;n++){
+				var item=jsoncategorias[n];
+                $('#nombreindicador').html(item.nombre);
+                $('#nomindicador').html(item.nombre);
+                $('#desindicador').html(item.descripcion);
+                $('#campos').html(item.campos);
+                var cuantosob = item.cuantos;
+                if(cuantosob == 0){
+                  $('#btnagregar').fadeIn();
+                  $('#btnactualizadato').fadeOut();
+                  $('#btncreadato').fadeIn();
+                }else{
+                  $('#btnagregar').fadeOut();
+                  $('#btncreadato').fadeOut();
+                  $('#btnactualizadato').fadeIn();
+                }
+                var formulareal = item.formula;
+                var formulaaux = item.campos.split(",");
 
+                var formulaver = '';
+                var a = '';var b = '';var c = '';var d = '';var e = '';
+                var f = '';var g = '';var h = '';var i = '';var j = '';
+                if(formulaaux[0] != ''){
+                  var a = formulaaux[0];
+                }
+                if(formulaaux[1] != ''){
+                  var b = formulaaux[1];
+                }
+                if(formulaaux[2] != ''){
+                  var c = formulaaux[2];
+                }
+                if(formulaaux[3] != ''){
+                  var d = formulaaux[3];
+                }
+                if(formulaaux[4] != ''){
+                  var e = formulaaux[4];
+                }
+                if(formulaaux[5] != ''){
+                  var f = formulaaux[5];
+                }
+                if(formulaaux[6] != ''){
+                  var g = formulaaux[6];
+                }
+                if(formulaaux[7] != ''){
+                  var h = formulaaux[7];
+                }
+                if(formulaaux[8] != ''){
+                  var i = formulaaux[8];
+                }
+                if(formulaaux[9] != ''){
+                  var j = formulaaux[9];
+                }
+
+                var f = ["a","b","c","d","e","f","g","h","i","j"];
+                var r = [a,b,c,d,e,f,g,h,i,j];
+                //formulaver = formulareal.replaceArray(find, replace);
+                $.each(f,function(l,v) {
+                    formulareal = formulareal.replace(new RegExp('\\b' + v + '\\b', 'g'),r[l]);
+                });
+
+                $('#forindicador').html(formulareal);
+                $('#jsonbaset').html(JSON.stringify(item.datosbaset));
+                $('#datosobjetivot').html(JSON.stringify(item.datosobjetivot));
+                $('#datosrealt').html(JSON.stringify(item.datosrealt));
+                $('#datostendenciat').html(JSON.stringify(item.datostendenciat));
+                var esporcentaje = item.esporcentaje;
+                if(esporcentaje == 1){
+                  var verporcentaje = '%';
+                }else{
+                  var verporcentaje = '';
+                }
+                $('#ultimoobjetivo').html(item.ultimoobjetivo+verporcentaje);
+                $('#ultimoreal').html(item.ultimoreal+verporcentaje);
+                $('#ultimobase').html(item.ultimobase+verporcentaje);
+                //var campos = item.campos.replace(/,/g, "<br><br>");
+                var campos = '';
+                //alert(campos);
+                var formulaaux = item.campos.split(",");
+                for(var u=0;u < formulaaux.length;u++){
+                 if(formulaaux[u].length > 30){
+                   campos += formulaaux[u].slice(0,30)+'...<br><br>';
+                 }else{
+                   campos += formulaaux[u]+'<br><br>';
+                 }
+                }
+
+                if(parseFloat(item.ultimoreal) > parseFloat(item.ultimoobjetivo) && parseFloat(item.ultimoreal) > parseFloat(item.ultimobase)){
+                  //alert('verde');
+                  document.getElementById('semaforo').style.color='#22DE0E';
+                }else if(parseFloat(item.ultimoreal) > parseFloat(item.ultimobase) && parseFloat(item.ultimoreal) < parseFloat(item.ultimoobjetivo)){
+                  //alert('amarillo');
+                  document.getElementById('semaforo').style.color='#D7DE17';
+                }else if(parseFloat(item.ultimoreal) < parseFloat(item.ultimobase) && parseFloat(item.ultimoreal) < parseFloat(item.ultimoobjetivo)){
+                  //alert('rojo');
+                  document.getElementById('semaforo').style.color='#DE0813';
+                }else if(parseFloat(item.ultimoreal) < parseFloat(item.ultimobase) && parseFloat(item.ultimoreal) > parseFloat(item.ultimoobjetivo)){
+                  //alert('amarillo');
+                  document.getElementById('semaforo').style.color='#D7DE17';
+                }
+
+                var ingresodatos = '';
+                var datosb = item.datosb;
+                $.each(datosb, function(o, item) {
+
+                    var quetiempoaux = item.id_tiempo;
+                    var quetiempo = item.id_tiempo.substr(0,1);
+                    var idtiempo = item.id_tiempo.substr(1);
+                    if(quetiempo == 'm'){
+                      var verfecha = mesesc[idtiempo];
+                    }
+
+                    if(item.a > 0){var vera = 'block';}else{var vera = 'none';}if(item.b > 0){var verb = 'block';}else{var verb = 'none';}
+                    if(item.c > 0){var verc = 'block';}else{var verc = 'none';}if(item.d > 0){var verd = 'block';}else{var verd = 'none';}
+                    if(item.e > 0){var vere = 'block';}else{var vere = 'none';}if(item.f > 0){var verf = 'block';}else{var verf = 'none';}
+                    if(item.g > 0){var verg = 'block';}else{var verg = 'none';}if(item.h > 0){var verh = 'block';}else{var verh = 'none';}
+                    if(item.i > 0){var veri = 'block';}else{var veri = 'none';}if(item.j > 0){var verj = 'block';}else{var verj = 'none';}
+
+                    ingresodatos += '<tr>';
+                        ingresodatos += '<td style="width: 26%"><b>'+verfecha+'</b><br>'+campos+'</td>';
+                        ingresodatos += '<td style="width: 23%" class="text-align-right">';
+                        ingresodatos += '<div style="display: '+vera+';"><br><input id="ba'+quetiempoaux+'" name="ba'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value="'+item.a+'"/></div>';
+                        ingresodatos += '<div style="display: '+verb+';"><div style="height: 5px;"></div><input id="bb'+quetiempoaux+'" name="bb'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value="'+item.b+'"/></div>';
+                        ingresodatos += '<div style="display: '+verc+';"><div style="height: 5px;"></div><input id="bc'+quetiempoaux+'" name="bc'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value="'+item.c+'"/></div>';
+                        ingresodatos += '<div style="display: '+verd+';"><div style="height: 5px;"></div><input id="bd'+quetiempoaux+'" name="bd'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value="'+item.d+'"/></div>';
+                        ingresodatos += '<div style="display: '+vere+';"><div style="height: 5px;"></div><input id="be'+quetiempoaux+'" name="be'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value="'+item.e+'"/></div>';
+                        ingresodatos += '<div style="display: '+verf+';"><div style="height: 5px;"></div><input id="bf'+quetiempoaux+'" name="bf'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value="'+item.f+'"/></div>';
+                        ingresodatos += '<div style="display: '+verg+';"><div style="height: 5px;"></div><input id="bg'+quetiempoaux+'" name="bg'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value="'+item.g+'"/></div>';
+                        ingresodatos += '<div style="display: '+verh+';"><div style="height: 5px;"></div><input id="bh'+quetiempoaux+'" name="bh'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value="'+item.h+'"/></div>';
+                        ingresodatos += '<div style="display: '+veri+';"><div style="height: 5px;"></div><input id="bi'+quetiempoaux+'" name="bi'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value="'+item.i+'"/></div>';
+                        ingresodatos += '<div style="display: '+verj+';"><div style="height: 5px;"></div><input id="bj'+quetiempoaux+'" name="bj'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value="'+item.j+'"/></div>';
+                        ingresodatos += '<input id="idb'+quetiempoaux+'" name="idb'+quetiempoaux+'" type="hidden" value="'+item.id+'"/></td>';
+                        ingresodatos += '<td style="width: 23%" class="text-align-right">';
+                        ingresodatos += '<div style="display: '+vera+';"><br><input id="oa'+quetiempoaux+'" name="oa'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<div style="display: '+verb+';"><div style="height: 5px;"></div><input id="ob'+quetiempoaux+'" name="ob'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<div style="display: '+verc+';"><div style="height: 5px;"></div><input id="oc'+quetiempoaux+'" name="oc'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<div style="display: '+verd+';"><div style="height: 5px;"></div><input id="od'+quetiempoaux+'" name="od'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<div style="display: '+vere+';"><div style="height: 5px;"></div><input id="oe'+quetiempoaux+'" name="oe'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<div style="display: '+verf+';"><div style="height: 5px;"></div><input id="of'+quetiempoaux+'" name="of'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<div style="display: '+verg+';"><div style="height: 5px;"></div><input id="og'+quetiempoaux+'" name="og'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<div style="display: '+verh+';"><div style="height: 5px;"></div><input id="oh'+quetiempoaux+'" name="oh'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<div style="display: '+veri+';"><div style="height: 5px;"></div><input id="oi'+quetiempoaux+'" name="oi'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<div style="display: '+verj+';"><div style="height: 5px;"></div><input id="oj'+quetiempoaux+'" name="oj'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<input id="ido'+quetiempoaux+'" name="ido'+quetiempoaux+'" type="hidden" value=""/></td>';
+                        ingresodatos += '<td style="width: 23%" class="text-align-right">';
+                        ingresodatos += '<div style="display: '+vera+';"><br><input id="ra'+quetiempoaux+'" name="ra'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<div style="display: '+verb+';"><div style="height: 5px;"></div><input id="rb'+quetiempoaux+'" name="rb'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<div style="display: '+verc+';"><div style="height: 5px;"></div><input id="rc'+quetiempoaux+'" name="rc'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<div style="display: '+verd+';"><div style="height: 5px;"></div><input id="rd'+quetiempoaux+'" name="rd'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<div style="display: '+vere+';"><div style="height: 5px;"></div><input id="re'+quetiempoaux+'" name="re'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<div style="display: '+verf+';"><div style="height: 5px;"></div><input id="rf'+quetiempoaux+'" name="rf'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<div style="display: '+verg+';"><div style="height: 5px;"></div><input id="rg'+quetiempoaux+'" name="rg'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<div style="display: '+verh+';"><div style="height: 5px;"></div><input id="rh'+quetiempoaux+'" name="rh'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<div style="display: '+veri+';"><div style="height: 5px;"></div><input id="ri'+quetiempoaux+'" name="ri'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<div style="display: '+verj+';"><div style="height: 5px;"></div><input id="rj'+quetiempoaux+'" name="rj'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+                        ingresodatos += '<input id="idr'+quetiempoaux+'" name="idr'+quetiempoaux+'" type="hidden" value=""/></td>';
+                        ingresodatos += '<td style="width: 5%" class="text-align-center"><span class="fa fa-trash"></span></td>';
+                    ingresodatos += '</tr>';
+                });
+
+                $('#tabladatos').html(ingresodatos);
+
+                var datoso = item.datoso;
+                $.each(datoso, function(p, itemp) {
+
+                var quetiempoauxo = itemp.id_tiempo;
+                $('#oa'+quetiempoauxo).val(itemp.a);$('#ob'+quetiempoauxo).val(itemp.b);$('#oc'+quetiempoauxo).val(itemp.c);
+                $('#od'+quetiempoauxo).val(itemp.d);$('#oe'+quetiempoauxo).val(itemp.e);$('#of'+quetiempoauxo).val(itemp.f);
+                $('#og'+quetiempoauxo).val(itemp.g);$('#oh'+quetiempoauxo).val(itemp.h);$('#oi'+quetiempoauxo).val(itemp.i);
+                $('#oj'+quetiempoauxo).val(itemp.j);$('#ido'+quetiempoauxo).val(itemp.id);
+
+                });
+
+                var datosr = item.datosr;
+                $.each(datosr, function(q, itemr) {
+
+                var quetiempoauxr = itemr.id_tiempo;
+                $('#ra'+quetiempoauxr).val(itemr.a);$('#rb'+quetiempoauxr).val(itemr.b);$('#rc'+quetiempoauxr).val(itemr.c);
+                $('#rd'+quetiempoauxr).val(itemr.d);$('#re'+quetiempoauxr).val(itemr.e);$('#rf'+quetiempoauxr).val(itemr.f);
+                $('#rg'+quetiempoauxr).val(itemr.g);$('#rh'+quetiempoauxr).val(itemr.h);$('#ri'+quetiempoauxr).val(itemr.i);
+                $('#rj'+quetiempoauxr).val(itemr.j);$('#idr'+quetiempoauxr).val(itemr.id);
+
+                });
+
+                var formatInteger = d3.format(",r");
+                var formatIntegery = d3.format(",.f");
+
+                nv.addGraph(function() {
+                  var chart = nv.models.lineChart()
+                      .margin({top: 5, bottom: 65, left: 75, right: 5})
+                      .showLegend(false);
+
+                  chart.yAxis
+                      .showMaxMin(false)
+                      .axisLabel(item.ejey)
+                      .tickFormat(function(d) { return formatIntegery(d)+verporcentaje; });
+
+                  chart.xAxis
+                      .showMaxMin(true)
+                      //.tickFormat(function(d) { return d3.time.format('%b %d')(new Date(d)) });
+                      //alert(d3.format(',.r'))
+                      //.tickFormat(function() { for(var h = 1; h <= 12; h++){ d3.format(h); } });
+                      .tickFormat(function(d) { return meses[formatInteger(d)]; });
+
+                  var myData = Formula();
+
+                  d3.select('#sources-chart-line svg')
+                      .datum(myData)
+                      .transition().duration(500)
+                      .call(chart);
+
+                  PjaxApp.onResize(chart.update);
+                  lineChart = chart;
+
+                  return chart;
+              });
+
+			}
+
+		}).fail(function(){
+			alert('error');
+		});
+}
+//alert(meses[7]);
+function Formula() {
+  var sin = [],sin2 = [],sin3 = [],sin4 = [],
+      cos = [];
+var base = 1000;
+var objetivo = 1200;
+var real = 1221.01;
+var ultimodato = 0;
+  var ultimidia = saber(11,2016);
+  //alert($('#jsonbaset').html());
+   var datosbaset = JSON.parse($('#jsonbaset').html());
+    $.each(datosbaset, function(z, item) {
+        console.log(item[z+1]);
+        sin.push({x: z+1, y: item[z+1]});
+    });
+   var datosobjetivot = JSON.parse($('#datosobjetivot').html());
+    $.each(datosobjetivot, function(y, item) {
+        console.log(item[y+1]);
+        sin2.push({x: y+1, y: item[y+1]});
+        ultimodato = item[y+1];
+    });
+   var datosrealt = JSON.parse($('#datosrealt').html());
+    $.each(datosrealt, function(k, item) {
+        console.log(item[k+1]);
+        //alert(k+1);
+        cos.push({x: k+1, y: item[k+1]});
+    });
+    var datostendenciat = JSON.parse($('#datostendenciat').html());
+    $.each(datostendenciat, function(t, item) {
+        console.log(item[t+1]);
+        sin3.push({x: t+1, y: item[t+1]});
+    });
+
+    //alert(ultimodato/2);
+        sin4.push({x: 1, y: ultimodato/1.5});
+
+    //alert($('#datosrealt').html());
+
+  //Line chart data should be sent as an array of series objects.
+  return [
+    {
+      values: cos,
+      key: 'Real',
+      color: '#283443',
+      area: true
+    },
+    {
+      values: sin2,
+      key: 'Meta',
+      color: '#24FF86'
+    },
+    {
+      values: sin,
+      key: 'Base',
+      color: '#F84952'
+    },
+    {
+      values: sin3,
+      key: 'Tendencia',
+      color: '#F7DD11'
+    },
+    {
+      values: sin4,
+      key: '',
+      color: '#394B60'
+    }
+  ];
+}
+function grabadatos(){
+
+  var d = document.getElementById('tabladatos').getElementsByTagName('input');
+  var base = '';
+  var cod = 1;
+  	for ( var i = 0; i < d.length; i++ ) {
+      var ww=d[i].id;
+      var tiva = ww.substr(0,1);
+      if(tiva=='b'){
+        var quien = ww.substr(1);
+        if(cod < 10){
+        var baux = document.getElementById(tiva+quien).value;
+        base += baux+'|';
+
+        }
+        if(cod == 10){
+        var baux = document.getElementById(tiva+quien).value;
+        var quienid = ww.substr(2);
+        var idb = document.getElementById('id'+tiva+quienid).value;
+        base += baux+'|'+idb+'@';
+        cod = 0;
+        }
+        cod++;
+      }
+    }
+    //alert(base);
+
+  var d1 = document.getElementById('tabladatos').getElementsByTagName('input');
+  var objetivo = '';
+  var codo = 1;
+  	for ( var io = 0; io < d1.length; io++ ) {
+      var wwo=d1[io].id;
+      var tivao = wwo.substr(0,1);
+      if(tivao=='o'){
+        var quieno = wwo.substr(1);
+        if(codo < 10){
+        var bauxo = document.getElementById(tivao+quieno).value;
+        objetivo += bauxo+'|';
+        }else if(codo == 10){
+        var bauxo = document.getElementById(tivao+quieno).value;
+        var quienido = wwo.substr(2);
+        var ido = document.getElementById('id'+tivao+quienido).value;
+        objetivo += bauxo+'|'+ido+'@';
+        codo = 0;
+        }
+        codo++;
+      }
+    }
+    //alert(objetivo);
+
+  var d2 = document.getElementById('tabladatos').getElementsByTagName('input');
+  var real = '';
+  var codr = 1;
+  	for ( var ir = 0; ir < d2.length; ir++ ) {
+      var wwr=d2[ir].id;
+      var tivar = wwr.substr(0,1);
+      if(tivar=='r'){
+        var quienr = wwr.substr(1);
+        if(codr < 10){
+        var bauxr = document.getElementById(tivar+quienr).value;
+        real += bauxr+'|';
+        }else if(codr == 10){
+        var bauxr = document.getElementById(tivar+quienr).value;
+        var quienidr = wwr.substr(2);
+        var idr = document.getElementById('id'+tivar+quienidr).value;
+        real += bauxr+'|'+idr+'@';
+        codr = 0;
+        }
+        codr++;
+      }
+    }
+    //alert(real);
+
+  var apiURL='https://www.practisis.net/kpi/api2.php';
+  var tiempo = $('#quetiempo').val();
+  $.post(apiURL,{
+  action : 'ActualizaIndicador',tiempo : tiempo,base : base,objetivo : objetivo,real : real
+  }).done(function(response){
+  	//alert(response);
+    location.reload(true);
+  }).fail(function(){
+  	alert('error');
+  });
+
+}
+function valParam(url, prmName){
+    var prmUpper = prmName.toUpperCase();
+    var prmPosic = url.indexOf(prmUpper);
+    var sepPos;
+    if (prmPosic != -1){
+     var sepPos = url.indexOf("&", prmPosic);
+     if (sepPos != -1){
+      return url.substring(prmPosic + prmUpper.length + 1, sepPos);
+     } else {
+      return url.substring(prmPosic + prmUpper.length + 1, url.length);
+     }
+    } else {
+     return "";
+    }
+}
+function agregadatos(){
+  var ingresodatos = '';
+  var fecha = new Date();
+  var mes = fecha.getMonth()+1;
+
+      var campos = $('#campos').html();
+      var camposaux = campos.split(",");
+      var camposreales = campos.replace(/,/g, "<br><br>");
+      //alert(camposaux.length)
+      var quetiempo = $('#quetiempo').val();
+      if(quetiempo == 'm'){
+        var verfecha = mesesc[mes];
+        var quetiempoaux = mes;
+      }
+
+      $('#quemes').val(mes);
+
+      var vera = 'none';var verb = 'none';var verc = 'none';var verd = 'none';var vere = 'none';
+      var verf = 'none';var verg = 'none';var verh = 'none';var veri = 'none';var verj = 'none';
+      for(var r=1; r<=camposaux.length; r++){
+        if(r == 1){var vera = 'block';}if(r == 2){var verb = 'block';}
+        if(r == 3){var verc = 'block';}if(r == 4){var verd = 'block';}
+        if(r == 5){var vere = 'block';}if(r == 6){var verf = 'block';}
+        if(r == 7){var verg = 'block';}if(r == 8){var verh = 'block';}
+        if(r == 9){var veri = 'block';}if(r == 10){var verj = 'block';}
+      }
+
+      ingresodatos += '<tr>';
+          ingresodatos += '<td style="width: 26%"><b>'+verfecha+'</b><br>'+camposreales+'</td>';
+          ingresodatos += '<td style="width: 23%" class="text-align-right">';
+          ingresodatos += '<div style="display: '+vera+';"><br><input id="ba'+quetiempoaux+'" name="ba'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verb+';"><div style="height: 5px;"></div><input id="bb'+quetiempoaux+'" name="bb'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verc+';"><div style="height: 5px;"></div><input id="bc'+quetiempoaux+'" name="bc'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verd+';"><div style="height: 5px;"></div><input id="bd'+quetiempoaux+'" name="bd'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+vere+';"><div style="height: 5px;"></div><input id="be'+quetiempoaux+'" name="be'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verf+';"><div style="height: 5px;"></div><input id="bf'+quetiempoaux+'" name="bf'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verg+';"><div style="height: 5px;"></div><input id="bg'+quetiempoaux+'" name="bg'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verh+';"><div style="height: 5px;"></div><input id="bh'+quetiempoaux+'" name="bh'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+veri+';"><div style="height: 5px;"></div><input id="bi'+quetiempoaux+'" name="bi'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verj+';"><div style="height: 5px;"></div><input id="bj'+quetiempoaux+'" name="bj'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<input id="idb'+quetiempoaux+'" name="idb'+quetiempoaux+'" type="hidden" value="0"/></td>';
+          ingresodatos += '<td style="width: 23%" class="text-align-right">';
+          ingresodatos += '<div style="display: '+vera+';"><br><input id="oa'+quetiempoaux+'" name="oa'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verb+';"><div style="height: 5px;"></div><input id="ob'+quetiempoaux+'" name="ob'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verc+';"><div style="height: 5px;"></div><input id="oc'+quetiempoaux+'" name="oc'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verd+';"><div style="height: 5px;"></div><input id="od'+quetiempoaux+'" name="od'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+vere+';"><div style="height: 5px;"></div><input id="oe'+quetiempoaux+'" name="oe'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verf+';"><div style="height: 5px;"></div><input id="of'+quetiempoaux+'" name="of'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verg+';"><div style="height: 5px;"></div><input id="og'+quetiempoaux+'" name="og'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verh+';"><div style="height: 5px;"></div><input id="oh'+quetiempoaux+'" name="oh'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+veri+';"><div style="height: 5px;"></div><input id="oi'+quetiempoaux+'" name="oi'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verj+';"><div style="height: 5px;"></div><input id="oj'+quetiempoaux+'" name="oj'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<input id="ido'+quetiempoaux+'" name="ido'+quetiempoaux+'" type="hidden" value=""/></td>';
+          ingresodatos += '<td style="width: 23%" class="text-align-right">';
+          ingresodatos += '<div style="display: '+vera+';"><br><input id="ra'+quetiempoaux+'" name="ra'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verb+';"><div style="height: 5px;"></div><input id="rb'+quetiempoaux+'" name="rb'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verc+';"><div style="height: 5px;"></div><input id="rc'+quetiempoaux+'" name="rc'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verd+';"><div style="height: 5px;"></div><input id="rd'+quetiempoaux+'" name="rd'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+vere+';"><div style="height: 5px;"></div><input id="re'+quetiempoaux+'" name="re'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verf+';"><div style="height: 5px;"></div><input id="rf'+quetiempoaux+'" name="rf'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verg+';"><div style="height: 5px;"></div><input id="rg'+quetiempoaux+'" name="rg'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verh+';"><div style="height: 5px;"></div><input id="rh'+quetiempoaux+'" name="rh'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+veri+';"><div style="height: 5px;"></div><input id="ri'+quetiempoaux+'" name="ri'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<div style="display: '+verj+';"><div style="height: 5px;"></div><input id="rj'+quetiempoaux+'" name="rj'+quetiempoaux+'" type="text" class="form-control input-transparent" style="text-align: right;" value=""/></div>';
+          ingresodatos += '<input id="idr'+quetiempoaux+'" name="idr'+quetiempoaux+'" type="hidden" value=""/></td>';
+          ingresodatos += '<td style="width: 5%" class="text-align-center"><span class="fa fa-trash"></span></td>';
+      ingresodatos += '</tr>';
+
+  $('#tabladatos').html(ingresodatos);
+}
+function creardatos(){
+
+  var d = document.getElementById('tabladatos').getElementsByTagName('input');
+  var base = '';
+  var cod = 1;
+  	for ( var i = 0; i < d.length; i++ ) {
+      var ww=d[i].id;
+      var tiva = ww.substr(0,1);
+      if(tiva=='b'){
+        var quien = ww.substr(1);
+        if(cod < 10){
+        var baux = document.getElementById(tiva+quien).value;
+          base += baux+'|';
+
+        }
+        if(cod == 10){
+        var baux = document.getElementById(tiva+quien).value;
+        var quienid = ww.substr(2);
+        var idb = document.getElementById('id'+tiva+quienid).value;
+          base += baux+'|'+idb+'@';
+        cod = 0;
+        }
+        cod++;
+      }
+    }
+    //alert(base);
+
+  var d1 = document.getElementById('tabladatos').getElementsByTagName('input');
+  var objetivo = '';
+  var codo = 1;
+  	for ( var io = 0; io < d1.length; io++ ) {
+      var wwo=d1[io].id;
+      var tivao = wwo.substr(0,1);
+      if(tivao=='o'){
+        var quieno = wwo.substr(1);
+        if(codo < 10){
+        var bauxo = document.getElementById(tivao+quieno).value;
+          objetivo += bauxo+'|';
+        }else if(codo == 10){
+        var bauxo = document.getElementById(tivao+quieno).value;
+        var quienido = wwo.substr(2);
+        var ido = document.getElementById('id'+tivao+quienido).value;
+          objetivo += bauxo+'|'+ido+'@';
+        codo = 0;
+        }
+        codo++;
+      }
+    }
+    //alert(objetivo);
+
+  var d2 = document.getElementById('tabladatos').getElementsByTagName('input');
+  var real = '';
+  var codr = 1;
+  	for ( var ir = 0; ir < d2.length; ir++ ) {
+      var wwr=d2[ir].id;
+      var tivar = wwr.substr(0,1);
+      if(tivar=='r'){
+        var quienr = wwr.substr(1);
+        if(codr < 10){
+        var bauxr = document.getElementById(tivar+quienr).value;
+        real += bauxr+'|';
+        }else if(codr == 10){
+        var bauxr = document.getElementById(tivar+quienr).value;
+        var quienidr = wwr.substr(2);
+        var idr = document.getElementById('id'+tivar+quienidr).value;
+        real += bauxr+'|'+idr+'@';
+        codr = 0;
+        }
+        codr++;
+      }
+    }
+    var quemes = $('#quemes').val();
+    //alert(real+'**'+quemes);
+
+  //if(base != '' && objetivo != '' && real != ''){
+
+  var url = window.location.href;
+  var variable;
+  url = unescape(url);
+  url = url.toUpperCase();
+  var parametro = valParam(url, "idind");
+  var anio = valParam(url, "anio");
+
+    var apiURL='https://www.practisis.net/kpi/api2.php';
+    var tiempo = $('#quetiempo').val();
+    $.post(apiURL,{
+    action : 'CreaDatosIndicador',tiempo : tiempo,base : base,objetivo : objetivo,real : real,quemes : quemes,anio : anio,indicador : parametro
+    }).done(function(response){
+    	//alert(response);
+      location.reload(true);
+    }).fail(function(){
+    	alert('error');
+    });
+  //}
+
+}
+function dividir(txt) {
+  numLetras = 30;
+  palabras = txt.split(' ');
+  cad = '';
+  i=0;
+  while (i < palabras.length) {
+    tot=0;
+   if (palabras[i].length >= numLetras) {
+      cad += ' '+palabras[i]+'';
+      i++
+    }
+    else while (true) {
+      if (tot + palabras[i].length + ((tot>0) ? 1 : 0) <= numLetras) {
+        cad += ' '+palabras[i];
+        tot += palabras[i].length + ((tot>0) ? 1 : 0);
+        i++;
+        if (i > palabras.length-1) break;
+      }
+      else {
+        cad+='';
+        break;
+      }
+    }
+  }
+  return cad;
+}
+</script>
 </body>
 </html>

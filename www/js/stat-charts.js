@@ -188,27 +188,31 @@ $(function(){
             return chart;
         });
 
-        nv.addGraph(function() {
+		 nv.addGraph(function() {
             var chart = nv.models.lineChart()
-                .margin({top: 0, bottom: 25, left: 30, right: 0})
-                .showLegend(false)
-                .color(keyColor);
+                .margin({top: 0, bottom: 65, left: 75, right: 0})
+                .showLegend(false);
+                //.color(keyColor);
 
             chart.yAxis
                 .showMaxMin(false)
+                .axisLabel('Plagas x Cama')
                 .tickFormat(d3.format(',.f'));
 
             chart.xAxis
                 .showMaxMin(false)
-                .tickFormat(function(d) { return d3.time.format('%b %d')(new Date(d)) });
+                //.axisLabel('Dias')
+                //.tickFormat(function(d) { return d3.time.format('%b %d')(new Date(d)) });
+                .tickFormat(d3.format(',.r'));
+
 
             //just to make it look different
-            testData2[0].area = true;
-            //testData2[3].area = true;
+            //testData2[0].area = true;
+            var myData = Formula2();
 
-            d3.select('#sources-chart-line svg')
+            d3.select('#sources-chart-line2 svg')
                 //.datum(sinAndCos())
-                .datum(testData2)
+                .datum(myData)
                 .transition().duration(500)
                 .call(chart);
 
@@ -217,28 +221,66 @@ $(function(){
 
             return chart;
         });
-		
-		 nv.addGraph(function() {
+
+        nv.addGraph(function() {
             var chart = nv.models.lineChart()
-                .margin({top: 0, bottom: 25, left: 30, right: 0})
-                .showLegend(false)
-                .color(keyColor);
+                .margin({top: 0, bottom: 65, left: 75, right: 0})
+                .showLegend(false);
+                //.color(keyColor);
 
             chart.yAxis
                 .showMaxMin(false)
-                .tickFormat(d3.format(',.f'));
+                .axisLabel('Flor')
+                .tickFormat(d3.format(',f'));
 
             chart.xAxis
                 .showMaxMin(false)
-                .tickFormat(function(d) { return d3.time.format('%b %d')(new Date(d)) });
+                //.axisLabel('Dias')
+                //.tickFormat(function(d) { return d3.time.format('%b %d')(new Date(d)) });
+                .tickFormat(d3.format(',.r'));
+
 
             //just to make it look different
-            testData2[0].area = true;
-            //testData2[3].area = true;
+            //testData2[0].area = true;
+            var myData = Formula3();
 
-            d3.select('#sources-chart-line2 svg')
+            d3.select('#sources-chart-line3 svg')
                 //.datum(sinAndCos())
-                .datum(testData2)
+                .datum(myData)
+                .transition().duration(500)
+                .call(chart);
+
+            PjaxApp.onResize(chart.update);
+            lineChart = chart;
+
+            return chart;
+        });
+
+        nv.addGraph(function() {
+            var chart = nv.models.lineChart()
+                .margin({top: 0, bottom: 65, left: 75, right: 0})
+                .showLegend(false);
+                //.color(keyColor);
+
+            chart.yAxis
+                .showMaxMin(false)
+                .axisLabel('Trabajadores')
+                .tickFormat(d3.format(',f'));
+
+            chart.xAxis
+                .showMaxMin(false)
+                //.axisLabel('Dias')
+                //.tickFormat(function(d) { return d3.time.format('%b %d')(new Date(d)) });
+                .tickFormat(d3.format(',.r'));
+
+
+            //just to make it look different
+            //testData2[0].area = true;
+            var myData = Formula4();
+
+            d3.select('#sources-chart-line4 svg')
+                //.datum(sinAndCos())
+                .datum(myData)
                 .transition().duration(500)
                 .call(chart);
 
@@ -267,3 +309,122 @@ $(function(){
 
     PjaxApp.onPageLoad(pageLoad);
 });
+dias=[31,29,31,30,31,30,31,31,30,31,30,31];
+function saber(mes,anio){
+ultimo=0;
+if (mes==1){
+fecha=new Date(anio,1,29)
+vermes=fecha.getMonth();
+if(vermes!=mes){ultimo=28}
+}
+if(ultimo==0){ultimo=dias[mes]}
+return ultimo;
+}
+function Formula2() {
+  var sin = [],sin2 = [],
+      cos = [];
+var base = 120;
+var objetivo = 160;
+var real = 142;
+  var ultimidia = saber(11,2016);
+  //alert(ultimidia);
+  for (var i = 1; i <= ultimidia; i++) {
+    var fechaaux = i+'/11/2016';
+    //alert(fechaaux);
+    sin.push({x: i, y: base*(i/4)});
+    sin2.push({x: i, y: objetivo*(i/2)});
+    cos.push({x: i, y: real*(i/2)});
+  }
+
+  //Line chart data should be sent as an array of series objects.
+  return [
+    {
+      values: cos,
+      key: 'Real',
+      color: '#F8FC73',
+      area: true
+    },
+    {
+      values: sin2,
+      key: 'Objetivo',
+      color: '#1FD100'
+    },
+    {
+      values: sin,
+      key: 'Base',
+      color: '#DE0813'
+    }
+  ];
+}
+function Formula3() {
+  var sin = [],sin2 = [],
+      cos = [];
+var base = 1500;
+var objetivo = 1800;
+var real = 1192
+  var ultimidia = saber(11,2016);
+  //alert(ultimidia);
+  for (var i = 1; i <= ultimidia; i++) {
+    var fechaaux = i+'/11/2016';
+    //alert(fechaaux);
+    sin.push({x: i, y: base*(i/4)});
+    sin2.push({x: i, y: objetivo*(i/2)});
+    cos.push({x: i, y: real*(i/5)});
+  }
+
+  //Line chart data should be sent as an array of series objects.
+  return [
+    {
+      values: cos,
+      key: 'Real',
+      color: '#F8FC73',
+      area: true
+    },
+    {
+      values: sin2,
+      key: 'Objetivo',
+      color: '#1FD100'
+    },
+    {
+      values: sin,
+      key: 'Base',
+      color: '#DE0813'
+    }
+  ];
+}
+function Formula4() {
+  var sin = [],sin2 = [],
+      cos = [];
+var base = 0.50;
+var objetivo = 2.00;
+var real = 1.22
+  var ultimidia = saber(11,2016);
+  //alert(ultimidia);
+  for (var i = 1; i <= ultimidia; i++) {
+    var fechaaux = i+'/11/2016';
+    //alert(fechaaux);
+    sin.push({x: i, y: base*(i/4)});
+    sin2.push({x: i, y: objetivo*(i/5)});
+    cos.push({x: i, y: real*(i/4)});
+  }
+
+  //Line chart data should be sent as an array of series objects.
+  return [
+    {
+      values: cos,
+      key: 'Real',
+      color: '#F8FC73',
+      area: true
+    },
+    {
+      values: sin2,
+      key: 'Objetivo',
+      color: '#1FD100'
+    },
+    {
+      values: sin,
+      key: 'Base',
+      color: '#DE0813'
+    }
+  ];
+}
